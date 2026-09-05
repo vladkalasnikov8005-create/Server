@@ -1,0 +1,4 @@
+# EssentialsX Chat configuration
+chat:
+  radius: 0
+  format: '&#7D7D7D[{GROUP}] &#9E9E9E{DISPLAYNAME} &#696969» &#B5B5B5{MESSAGE}'

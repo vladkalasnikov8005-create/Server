@@ -1,0 +1,26 @@
+# TAB configuration
+scoreboard:
+  enabled: false
+
+header-footer:
+  enabled: true
+  header:
+    - "&#737373&lВыживание"
+    - "&#A6A6A6Добро пожаловать, %player%!"
+  footer:
+    - "&#8C8C8CОнлайн: %online%"
+    - "&#595959Приятной игры!"
+
+tablist-name-formatting:
+  enabled: true
+  align-tabsuffix-on-the-right: false
+  character-width-overrides: {}
+  anti-override: true
+  disable-condition: '%world%=disabledworld'
+
+yellow-number-in-tablist:
+  enabled: false
+  value: '%ping%'
+
+belowname-objective:
+  enabled: false
