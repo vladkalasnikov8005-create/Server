@@ -112,6 +112,8 @@ io.on('connection', (socket) => {
       setTimeout(() => socket.emit('log', '<span class="prefix">[' + new Date().toLocaleTimeString() + ']</span> <span class="info">Available commands: gamemode, give, op, stop, say</span>'), 200);
     } else if (cmd.toLowerCase().startsWith('say ')) {
       setTimeout(() => socket.emit('log', '<span class="prefix">[' + new Date().toLocaleTimeString() + ']</span> <span class="system">[Server] ' + cmd.substring(4) + '</span>'), 100);
+    } else if (cmd.toLowerCase().startsWith('op ')) {
+      setTimeout(() => socket.emit('log', '<span class="prefix">[' + new Date().toLocaleTimeString() + ']</span> <span class="info">Made ' + cmd.substring(3) + ' a server operator</span>'), 100);
     } else {
       setTimeout(() => socket.emit('log', '<span class="prefix">[' + new Date().toLocaleTimeString() + ']</span> <span class="error">Unknown command. Type "help" for help.</span>'), 200);
     }
